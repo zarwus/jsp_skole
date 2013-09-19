@@ -1,36 +1,35 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
-    Created on : 19.sep.2013, 11:06:06
-    Author     : kenneth
-*/
+    Navigation menu
 
-nav ul ul{
+    Created on : 15.sep.2013, 13:32:59
+    Author     : Kenneth Berg Sandhåland <zarwus@gmail.com>
+*/
+nav {
+    text-align: left;
+}
+nav ul ul {
     display: none;
 }
+
 nav ul li:hover > ul {
     display: block;
 }
-
-nav ul {
-    background: silver;
-    background: linear-gradient(top, gray 0%, silver 100%);
-    background: -moz-linear-gradient(top, gray 0%, silver 100%);
-    background: -webkit-linear-gradient(top, gray 0%, silver 100%);
-    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.5);
-    width: 1040px;
+nav ul{
+    background: black;
+    background: linear-gradient(top, silver 0%, gray 100%);
+    background: -moz-linear-gradient(top, silver 0%, gray 100%);
+    background: -webkit-linear-gradient(top, silver 0%, gray 100%);
+    box-shadow: 9px 7px 9px rgba(0, 0, 0, 0.5);
     padding: 0 20px;
     border-radius: 10px;
     list-style: none;
     position: relative;
     display: inline-table;
-    
+    margin-bottom: 0px;
     margin-top: 0px;
-    
+    width: 1040px;
 }
+
 nav ul:after {
     content: "";
     clear: both;
@@ -40,50 +39,54 @@ nav ul:after {
 nav ul li {
     float: left;
 }
-nav ul li:hover{
-    background: green;
-    background: linear-gradient(top, green 0%, greenyellow 100%);
-    background: -moz-linear-gradient( top, green 0%, greenyellow 100%);
-    background: -webkit-linear-gradient(top, green 0%, greenyellow 100%);
-}
-nav ul li:hover a {
-    color: whitesmoke;
-}
 
-nav ul li a{
-    color: black;
+nav ul li:hover{
+    background: gray;
+    background: linear-gradient(top, greenyellow 0%, green 100%);
+    background: -moz-linear-gradient(top, greenyellow 0%, green 100%);
+    background: -webkit-linear-gradient(top, greenyellow 0%, green 100%);
+}
+nav ul li a:hover {
+    color: white;
+}
+nav ul li a {
     display: block;
     padding: 10px 20px;
+    color: black;
     text-decoration: none;
 }
 
-nav ul ul{
-    background: green;
-    background: linear-gradient(top, green 0%, greenyellow 100%);
-    background: -moz-linear-gradient( top, green 0%, greenyellow 100%);
-    background: -webkit-linear-gradient(top, green 0%, greenyellow 100%);
-    color: black;
+nav ul ul {
+    background: greenyellow;
+    background: linear-gradient(top, greenyellow 0%, green 100%);
+    background: -moz-linear-gradient(top, greenyellow 0%, green 100%);
+    background: -webkit-linear-gradient(top, greenyellow 0%, green 100%);
+    float: none;
     border-radius: 0px;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.5);
     padding: 0px;
     position: absolute;
     top: 100%;
     width: auto;
 }
-nav ul ul li{
+nav ul ul li {
     float: none;
     position: relative;
 }
-nav ul ul li a{
-    color: black;
+nav ul ul li a {
     padding: 10px 20px;
 }
-nav ul ul li a:hover{
+nav ul ul li a:hover {
     background: gray;
     color: whitesmoke;
 }
 
-nav ul ul ul{
+nav ul ul ul {
     position: absolute;
     left: 100%;
     top: 0;
+    width: available;
+}
+nav ul ul ul li a{
+    display: block;
 }
